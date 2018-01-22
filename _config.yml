@@ -1,12 +1,10 @@
 title: 王雅轩
 description: My Personal Blog
 author: 王雅轩
-logo: /blog/static/img/avatar.png
+logo: https://github.com/wangyaxuanFE/blog/blob/master/static/img/avatar.png
 github: https://github.com/wangyaxuanFE/blog
 about: Freelance developer
 
-baseurl: "https://github.com/wangyaxuanFE/blog"
-url: "https://github.com/wangyaxuanFE/blog"
 
 allowsearch: true
 

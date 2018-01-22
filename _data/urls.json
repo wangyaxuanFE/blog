@@ -8,7 +8,8 @@
   {
     "text": "About",
     "url": "/about/",
-    "icon": "fa-comments"
+    "icon": "fa-comments",
+    "layout": "post"
   },
   {
     "text": "Projects",
