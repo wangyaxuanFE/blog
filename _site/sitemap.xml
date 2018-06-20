@@ -5,8 +5,8 @@
     <description>My Personal Blog</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/sitemap.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 13 Sep 2017 14:46:28 +0800</pubDate>
-    <lastBuildDate>Wed, 13 Sep 2017 14:46:28 +0800</lastBuildDate>
+    <pubDate>Wed, 20 Jun 2018 18:09:52 +0800</pubDate>
+    <lastBuildDate>Wed, 20 Jun 2018 18:09:52 +0800</lastBuildDate>
     <generator>Jekyll v3.4.3</generator>
     
       <item>
@@ -187,13 +187,13 @@ end tell
 &lt;hr /&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;最小化和压缩&lt;br /&gt;
-方法可用于所有内容，包括 HTML，CSS，JavaScript，图片和其它资源。&lt;br /&gt;
-最小化是移除所有多余的字符，包括空格，注释，多余的分号，等等&lt;br /&gt;
-压缩比如 GZip，大大压缩下载文件的大小&lt;br /&gt;
+  &lt;li&gt;最小化和压缩
+方法可用于所有内容，包括 HTML，CSS，JavaScript，图片和其它资源。
+最小化是移除所有多余的字符，包括空格，注释，多余的分号，等等
+压缩比如 GZip，大大压缩下载文件的大小
 两种方法都用的情况下，资源加载量减少了 80% 到 90%。比如：bootstrap 节省了 87% 的流量。&lt;/li&gt;
-  &lt;li&gt;无障碍&lt;br /&gt;
-不会提升页面的下载速度，但会大大提升残障人士的满意度。给元素加上 aria 标签，图片提供 alt 文本，HTML 5 无障碍参见。&lt;br /&gt;
+  &lt;li&gt;无障碍
+不会提升页面的下载速度，但会大大提升残障人士的满意度。给元素加上 aria 标签，图片提供 alt 文本，HTML 5 无障碍参见。
 使用诸如 &lt;a href=&quot;http://wave.webaim.org/&quot;&gt;WAVE&lt;/a&gt; 的工具鉴别哪些地方可以提高可访问性。&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -236,9 +236,9 @@ media 属性指定加载样式的条件，比如：符合最大或最小分辨�
 &lt;h3 id=&quot;步骤三--javascript&quot;&gt;步骤三 — JavaScript&lt;/h3&gt;
 &lt;hr /&gt;
 
-&lt;p&gt;浏览器不断构建 DOM / CSSOM 节点，直到发现外部或者行内的脚本。&lt;br /&gt;
-由于脚本可能需要访问或操作之前的 HTML 或样式，我们必须等待它们构建完成。&lt;br /&gt;
-因此浏览器必须停止解析节点，完成构建 CSSOM，执行脚本，然后再继续。这就是 JavaScript 被称作&lt;strong&gt;“解析器阻塞”&lt;/strong&gt;的原因。&lt;br /&gt;
+&lt;p&gt;浏览器不断构建 DOM / CSSOM 节点，直到发现外部或者行内的脚本。
+由于脚本可能需要访问或操作之前的 HTML 或样式，我们必须等待它们构建完成。
+因此浏览器必须停止解析节点，完成构建 CSSOM，执行脚本，然后再继续。这就是 JavaScript 被称作&lt;strong&gt;“解析器阻塞”&lt;/strong&gt;的原因。
 脚本只能等到先前的 CSS 节点构建完成。
 &lt;img src=&quot;/images/fe-liu-4.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
@@ -246,19 +246,19 @@ media 属性指定加载样式的条件，比如：符合最大或最小分辨�
 &lt;hr /&gt;
 &lt;ul&gt;
   &lt;li&gt;
-    &lt;p&gt;异步加载脚本&lt;br /&gt;
+    &lt;p&gt;异步加载脚本
 脚本添加&lt;strong&gt;async&lt;/strong&gt;属性，可以通知浏览器不要阻塞其余页面的加载，下载脚本处于较低的优先级。一旦下载完成，就可以执行。
 &lt;img src=&quot;/images/fe-liu-5.png&quot; alt=&quot;&quot; /&gt;
 &lt;strong&gt;async&lt;/strong&gt;适用于不影响 DOM 或 CSSOM 的脚本，对一些跟我们的代码无关的，不影响用户体验的外部脚本尤其适用，比如：分析统计脚本。&lt;/p&gt;
   &lt;/li&gt;
-  &lt;li&gt;延迟加载脚本&lt;br /&gt;
+  &lt;li&gt;延迟加载脚本
 &lt;strong&gt;defer&lt;/strong&gt; 跟 &lt;strong&gt;async&lt;/strong&gt; 非常相似，不会阻塞页面加载，但会等到 HTML 完成解析后再执行。
 &lt;img src=&quot;/images/fe-liu-6.png&quot; alt=&quot;&quot; /&gt;
 使用 &lt;strong&gt;&lt;a href=&quot;https://varvy.com/pagespeed/defer-loading-javascript.html&quot;&gt;defer&lt;/a&gt;&lt;/strong&gt; 策略的 另一个好选择，或者也可以使用 addEventListener，了解更多，参加这里。
 不幸的是 &lt;strong&gt;async&lt;/strong&gt; 和 &lt;strong&gt;defer&lt;/strong&gt; 对于行内的脚本不起作用，浏览器默认会编译执行它们。&lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;操作之前克隆节点
-多次操作 DOM 时可以尝试，首先克隆整个 DOM 节点更加高效，操作克隆后的节点，然后替换先前的节点，避免了多次重绘，降低了 CPU 和内存消耗，同时也避免了不必要的页面闪烁。&lt;br /&gt;
+多次操作 DOM 时可以尝试，首先克隆整个 DOM 节点更加高效，操作克隆后的节点，然后替换先前的节点，避免了多次重绘，降低了 CPU 和内存消耗，同时也避免了不必要的页面闪烁。
 需要注意，克隆的时候并没有克隆事件监听。&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;Preload/Prefetch/Prerender/Preconnect
@@ -278,9 +278,9 @@ media 属性指定加载样式的条件，比如：符合最大或最小分辨�
 
 &lt;h3 id=&quot;步骤六--渲染paint&quot;&gt;步骤六 — 渲染（Paint）&lt;/h3&gt;
 &lt;hr /&gt;
-&lt;p&gt;最终的渲染阶段，会真正地光栅化屏幕上的像素，把页面呈现给用户。&lt;br /&gt;
+&lt;p&gt;最终的渲染阶段，会真正地光栅化屏幕上的像素，把页面呈现给用户。
 &lt;img src=&quot;/images/fe-liu-9.png&quot; alt=&quot;&quot; /&gt;
-整个过程耗时1秒或十分之一秒，我们的任务是让它更快。&lt;br /&gt;
+整个过程耗时1秒或十分之一秒，我们的任务是让它更快。
 如果 JavaScript 事件改变了页面的某部分，便会引起渲染树的重绘，并且迫使布局（Layout）和渲染（Paint）过程再次进行。&lt;/p&gt;
 
 &lt;h3 id=&quot;浏览器如何发起网络请求&quot;&gt;浏览器如何发起网络请求&lt;/h3&gt;
@@ -292,20 +292,20 @@ media 属性指定加载样式的条件，比如：符合最大或最小分辨�
 
 &lt;h3 id=&quot;关键路径长度&quot;&gt;关键路径长度&lt;/h3&gt;
 &lt;hr /&gt;
-&lt;p&gt;关键渲染路径的度量标准是路径长度。最理想的关键路径长度是1。&lt;br /&gt;
-如果页面包含一些内部样式和 JavaScript ，关键路径发生以下改变。&lt;br /&gt;
+&lt;p&gt;关键渲染路径的度量标准是路径长度。最理想的关键路径长度是1。
+如果页面包含一些内部样式和 JavaScript ，关键路径发生以下改变。
 &lt;img src=&quot;/images/fe-liu-11.png&quot; alt=&quot;&quot; /&gt;
-新增两步，构建 CSSOM和执行脚本，因为我们的 HTML 有内部样式和脚本需要计算。由于没有外部请求，我们的关键路径长度没变。&lt;br /&gt;
+新增两步，构建 CSSOM和执行脚本，因为我们的 HTML 有内部样式和脚本需要计算。由于没有外部请求，我们的关键路径长度没变。
 但是注意，我们的 HTML 大小增加到了 2kb，某些地方还是受了影响。&lt;/p&gt;
 
 &lt;h3 id=&quot;关键字节数&quot;&gt;关键字节数&lt;/h3&gt;
 &lt;hr /&gt;
-&lt;p&gt;三个度量标准之二出现了，关键字节数，它用来衡量渲染页面需要传送多少字节数。&lt;br /&gt;
-如果你认为不需要外部资源，就大错特错了，外部资源可以被缓存。&lt;br /&gt;
+&lt;p&gt;三个度量标准之二出现了，关键字节数，它用来衡量渲染页面需要传送多少字节数。
+如果你认为不需要外部资源，就大错特错了，外部资源可以被缓存。
 我们使用一个外部 CSS 文件，一个外部 JavaScript 文件，和一个外部带 async 属性的 JavaScript 文件。关键路径图如下：&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/fe-liu-12.png&quot; alt=&quot;&quot; /&gt;
-浏览器请求页面，构建 DOM，发现外部资源后开始下载，CSS 和 JavaScript 有较高的优先级，其它资源次之。&lt;br /&gt;
+浏览器请求页面，构建 DOM，发现外部资源后开始下载，CSS 和 JavaScript 有较高的优先级，其它资源次之。
 &lt;strong&gt;styles.css&lt;/strong&gt; 和 &lt;strong&gt;app.js&lt;/strong&gt; 通过另一个关键路径获取。暂时不获取 analytics.js ，因为加了 async 属性，浏览器将用另一个线程下载它，它处于较低优先级，不会阻塞页面渲染，也不影响关键路径。&lt;/p&gt;
 
 &lt;h3 id=&quot;关键文件&quot;&gt;关键文件&lt;/h3&gt;
