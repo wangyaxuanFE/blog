@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="shortcut icon" href="/static/img/favicon.ico" />
+        <title>react-router-redux还需要用吗 - 王雅轩</title>
+        <meta name="author" content="王雅轩" />
+        <meta name="description" content="react-router-redux还需要用吗" />
+        <meta name="keywords" content="react-router-redux还需要用吗, 王雅轩, fe" />
+
+        <meta content="0" property="fb:app_id">
+        <meta content="王雅轩" property="og:site_name">
+        
+          <meta content="react-router-redux还需要用吗" property="og:title">
+        
+        
+          <meta content="article" property="og:type">
+        
+        
+          <meta content="My Personal Blog" property="og:description">
+        
+        
+          <meta content="http://localhost:4000/fe/2017/03/21/react-router-redux.html" property="og:url">
+        
+        
+          <meta content="2017-03-21T00:00:00+08:00" property="article:published_time">
+          <meta content="http://localhost:4000/about/" property="article:author">
+        
+        
+          <meta content="http://localhost:4000/static/img/logo-high-resolution.png" property="og:image">
+        
+        
+          
+          <meta content="fe" property="article:section">
+          
+        
+        
+          
+          <meta content="http" property="article:tag">
+          
+        
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:site" content="@\#">
+        <meta name="twitter:creator" content="@\#">
+        
+          <meta name="twitter:title" content="react-router-redux还需要用吗">
+        
+        
+          <meta name="twitter:url" content="http://localhost:4000/fe/2017/03/21/react-router-redux.html">
+        
+        
+          <meta name="twitter:description" content="My Personal Blog">
+        
+        
+
+      <link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml">
+      <script type="text/javascript">window.baseurl = 'http://localhost:4000';</script>
+      
+        <!-- Custom Fonts -->
+        <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+
+        <!-- FontAwesome icons -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/74dfc6cf47.css">
+
+        <!-- Core BootStrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <!-- Material Design CSS -->
+        <link rel="stylesheet" href="/static/css/bootstrap-material-design.min.css">
+
+        <!-- syntax highlighting CSS -->
+        <link rel="stylesheet" href="/static/css/syntax.css">
+
+        <!-- Custom CSS -->        
+        <link rel="stylesheet" href="/static/css/thickbox.css">
+        <link rel="stylesheet" href="/static/css/main.css">
+        <link rel="stylesheet" href="/static/css/projects.css">
+
+        <script type="text/javascript">
+          //loadingImage is relative to project dir
+          var tb_pathToImage = "/static/img/loadingAnimation.gif";
+        </script>
+
+  </head>
+
+  <body class="home overflow-hidden">
+    <div class="header-panel shadow-z-2">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-sm-4 col-xs-12">
+            <div class="row-picture">
+              <img id="about" class="logo-img" src="https://github.com/wangyaxuanFE/blog/blob/master/static/img/avatar.jpg" height="75px" width="75px">
+            </div>
+            <div class="row-details">
+              <h4 class="list-group-item-heading">王雅轩</h4>
+              <p class="list-group-item-text">Freelance developer</p>
+              <div class="social-icons">
+	
+        <a class="icon" target="_blank" href=""><i class="fa fa-facebook"></i></a>
+    
+        <a class="icon" target="_blank" href=""><i class="fa fa-twitter"></i></a>
+    
+        <a class="icon" target="_blank" href=""><i class="fa fa-linkedin"></i></a>
+    
+        <a class="icon" target="_blank" href=""><i class="fa fa-stack-exchange"></i></a>
+    
+</div>
+
+            </div>
+            <div class="navbar-header pull-right">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <i class="fa fa-2x fa-bars"></i>
+              </button>
+            </div>
+          </div>
+          <div class="col-md-9 col-sm-8 col-xs-12">
+          <div class="row">
+            <h2 class="blog-title-pro col-md-6 col-sm-12 col-xs-12 ">react-router-redux还需要用吗</h2>
+            
+            <div class="col-md-6 col-sm-12 col-xs-12 searchcontrol" id="js-search">
+              <input class="form-control" type="text" id="js-search__input" placeholder="Search">
+              <ul class="search__results" id="js-search__results"></ul>
+            </div>
+            
+            </div>
+            <p class="info">
+              
+                <span class="time">21 Mar 2017</span>
+              
+              
+                <span class="categories">
+                  &raquo; 
+                  
+                    <a href="/category/fe">fe</a>
+                    
+                  
+                </span>
+              
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container main outer">
+      <div class="row">
+        <div class="col-md-3 col-xs-12">
+              <nav class="menu">
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <ul class="list-separator nav navbar-nav well well-primary page">
+
+	
+	
+	
+	
+	
+	
+    
+	
+	<li class="col-lg-12 col-md-12 col-sm-4 col-xs-12  react-router-redux.html"><a href="/"><i class="fa fa-home"></i> Home</a></li>
+
+	
+	
+	
+	
+	
+	
+    
+	
+	<li class="col-lg-12 col-md-12 col-sm-4 col-xs-12  react-router-redux.html"><a href="/about/"><i class="fa fa-comments"></i> About</a></li>
+
+	
+	
+	
+	
+	
+	
+    
+	
+	<li class="col-lg-12 col-md-12 col-sm-4 col-xs-12  react-router-redux.html"><a href="/projects"><i class="fa fa-desktop"></i> Projects</a></li>
+
+	
+	
+	
+	
+	
+	
+    
+	
+	<li class="col-lg-12 col-md-12 col-sm-4 col-xs-12  react-router-redux.html"><a href="/#"><i class="fa fa-graduation-cap"></i> Resume</a></li>
+
+	
+	
+	
+	
+	
+	
+    
+	
+	<li class="col-lg-12 col-md-12 col-sm-4 col-xs-12  react-router-redux.html"><a href="/#"><i class="fa fa-github"></i> Github</a></li>
+
+	
+	
+	
+	
+	
+	
+    
+	
+	<li class="col-lg-12 col-md-12 col-sm-4 col-xs-12  react-router-redux.html"><a href="/feed.xml"><i class="fa fa-feed"></i> XML Feed</a></li>
+
+</ul>
+
+    </div>
+    </nav>
+
+        </div>
+        <div class="col-md-9 col-xs-12 full">
+          <div class="well">
+    
+    <div>
+    	<h2 id="react-router-redux是什么">react-router-redux是什么</h2>
+
+<p>是将react-router 和 redux 集成到一起的库，让你可以用redux的方式去操作react-router。
+  本质上，是把react-router自己维护的状态，例如location、history、path等等，也交给redux管理 。</p>
+
+<h2 id="以前的用法">以前的用法</h2>
+<hr />
+<p><strong>routerActions</strong></p>
+
+<p>实现了组件内部跳转～</p>
+
+<div class="language-js highlighter-rouge"><pre class="highlight"><code><span class="kr">import</span> <span class="p">{</span><span class="nx">routerActions</span><span class="p">}</span> <span class="nx">from</span> <span class="s1">'react-router-redux'</span>
+<span class="kr">import</span> <span class="p">{</span> <span class="nx">bindActionCreators</span> <span class="p">}</span> <span class="nx">from</span> <span class="s1">'redux'</span>
+<span class="kd">function</span> <span class="nx">mapDispatchToProps</span><span class="p">(</span><span class="nx">dispatch</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="p">{</span>
+    <span class="na">actions</span><span class="p">:</span> <span class="nx">bindActionCreators</span><span class="p">(</span><span class="nx">Actions</span><span class="p">,</span> <span class="nx">dispatch</span><span class="p">),</span>
+    <span class="na">routerActions</span><span class="p">:</span> <span class="nx">bindActionCreators</span><span class="p">(</span><span class="nx">routerActions</span><span class="p">,</span> <span class="nx">dispatch</span><span class="p">)</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="nx">routerActions</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="s1">'/user'</span><span class="p">);</span>
+<span class="nx">routerActions</span><span class="p">.</span><span class="nx">replace</span><span class="p">(</span><span class="s1">'user/validatesuccess'</span><span class="p">);</span>
+</code></pre>
+</div>
+
+<p><strong>routerReducer , routerMiddleware</strong></p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>* store传入路由信息～
+* 中间件传入，可以直接从state 中的router属性中获取location，history等对象～
+</code></pre>
+</div>
+
+<div class="language-js highlighter-rouge"><pre class="highlight"><code><span class="kr">const</span> <span class="nx">store</span> <span class="o">=</span> <span class="nx">createStore</span><span class="p">(</span>
+    <span class="nx">combineReducers</span><span class="p">({</span>
+        <span class="p">...</span><span class="nx">reducer</span><span class="p">,</span>
+        <span class="na">router</span><span class="p">:</span> <span class="nx">routerReducer</span>
+    <span class="p">}),</span>
+    <span class="nx">applyMiddleware</span><span class="p">(</span><span class="nx">routeMiddleware</span><span class="p">));</span>
+</code></pre>
+</div>
+
+<p><strong>ConnectedRouter</strong></p>
+
+<div class="language-js highlighter-rouge"><pre class="highlight"><code><span class="kr">import</span> <span class="p">{</span> <span class="nx">ConnectedRouter</span><span class="p">,</span><span class="nx">syncHistoryWithStore</span> <span class="p">}</span> <span class="nx">from</span> <span class="s1">'react-router-redux'</span>
+<span class="kr">import</span> <span class="p">{</span> <span class="nx">browserHistory</span> <span class="p">}</span> <span class="nx">from</span> <span class="s1">'react-router'</span>
+<span class="kr">const</span> <span class="nx">history</span> <span class="o">=</span> <span class="nx">syncHistoryWithStore</span><span class="p">(</span><span class="nx">browserHistory</span><span class="p">,</span> <span class="nx">store</span><span class="p">);</span>
+<span class="kr">const</span> <span class="nx">app</span> <span class="o">=</span> <span class="p">(</span>
+    <span class="o">&lt;</span><span class="nx">Provider</span> <span class="nx">store</span><span class="o">=</span><span class="p">{</span><span class="nx">store</span><span class="p">}</span><span class="o">&gt;</span>
+      <span class="o">&lt;</span><span class="nx">ConnectedRouter</span> <span class="nx">history</span><span class="o">=</span><span class="p">{</span><span class="nx">history</span><span class="p">}</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="nx">TheApp</span><span class="o">/&gt;</span>
+      <span class="o">&lt;</span><span class="sr">/ConnectedRouter</span><span class="err">&gt;
+</span>    <span class="o">&lt;</span><span class="sr">/Provider</span><span class="err">&gt;
+</span>  <span class="p">);</span>
+</code></pre>
+</div>
+
+<h2 id="react-router本身也提供了解决上述问题的方法">react-router本身也提供了解决上述问题的方法</h2>
+<hr />
+
+<div class="language-js highlighter-rouge"><pre class="highlight"><code><span class="c1">//在组件外部使用导航</span>
+<span class="kr">import</span> <span class="p">{</span> <span class="nx">browserHistory</span> <span class="p">}</span> <span class="nx">from</span> <span class="s1">'react-router'</span>
+<span class="nx">browserHistory</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="s1">'/some/path'</span><span class="p">)</span>
+
+<span class="c1">//组件内部可跳转</span>
+
+<span class="c1">//1，react-router v4 在 Router 组件中通过Contex暴露了一个router对象~</span>
+<span class="c1">//在子组件中使用Context，我们可以获得router对象</span>
+<span class="k">this</span><span class="p">.</span><span class="nx">context</span><span class="p">.</span><span class="nx">router</span><span class="p">.</span><span class="nx">history</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="s2">"/some/Path"</span><span class="p">);</span>
+
+<span class="c1">//2，使用 withRouter</span>
+<span class="c1">//withRouter可以包装任何自定义组件，将react-router 的 history,location,match 三个对象传入,</span>
+<span class="c1">//获取路由信息</span>
+<span class="kr">import</span> <span class="p">{</span><span class="nx">withRouter</span><span class="p">}</span> <span class="nx">from</span> <span class="s2">"react-router-dom"</span><span class="p">;</span>
+<span class="kr">class</span> <span class="nx">MyComponent</span> <span class="kr">extends</span> <span class="nx">React</span><span class="p">.</span><span class="nx">Component</span> <span class="p">{</span>
+  <span class="p">...</span>
+  <span class="nx">myFunction</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">props</span><span class="p">.</span><span class="nx">history</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="s2">"/some/Path"</span><span class="p">);</span>
+  <span class="p">}</span>
+  <span class="p">...</span>
+<span class="p">}</span>
+<span class="kr">export</span> <span class="k">default</span> <span class="nx">withRouter</span><span class="p">(</span><span class="nx">MyComponent</span><span class="p">);</span>
+</code></pre>
+</div>
+
+<p><strong>总结：一般情况下，是没有必要使用这个库的 ～</strong></p>
+
+    </div>
+</div>
+
+          <div class="row">
+            <div class="col-md-12 col-xs-12 footer">
+              <footer>
+  © 2016 Your Name <a href="#">Privacy link</a> - Powered by Jekyll.
+</footer>
+<div align="center">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <ins class="adsbygoogle"
+    style="display:block"
+    data-ad-client="ca-pub-0000000000000000"
+    data-ad-slot="0000000000"
+    data-ad-format="auto"></ins>
+  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+
+            </div>
+          </div>
+        </div> <!-- end /.col-md-9 -->
+      </div> <!-- end /.row -->
+    </div>
+
+    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<script src="/static/js/super-search.js"></script>
+
+<script src="/static/js/thickbox-compressed.js"></script>
+<script src="/static/js/material.min.js"></script>
+<script src="/static/js/main.js"></script>
+<script src="/static/js/projects.js"></script>
+
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-72862926-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+  </body>
+</html>

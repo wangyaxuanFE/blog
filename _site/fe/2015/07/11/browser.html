@@ -7,15 +7,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link rel="shortcut icon" href="/static/img/favicon.ico" />
-        <title>浏览器 - 王雅轩</title>
+        <title>浏览器的渲染 - 王雅轩</title>
         <meta name="author" content="王雅轩" />
-        <meta name="description" content="浏览器" />
-        <meta name="keywords" content="浏览器, 王雅轩, fe" />
+        <meta name="description" content="浏览器的渲染" />
+        <meta name="keywords" content="浏览器的渲染, 王雅轩, fe" />
 
         <meta content="0" property="fb:app_id">
         <meta content="王雅轩" property="og:site_name">
         
-          <meta content="浏览器" property="og:title">
+          <meta content="浏览器的渲染" property="og:title">
         
         
           <meta content="article" property="og:type">
@@ -47,7 +47,7 @@
         <meta name="twitter:site" content="@\#">
         <meta name="twitter:creator" content="@\#">
         
-          <meta name="twitter:title" content="浏览器">
+          <meta name="twitter:title" content="浏览器的渲染">
         
         
           <meta name="twitter:url" content="http://localhost:4000/fe/2015/07/11/browser.html">
@@ -119,7 +119,7 @@
           </div>
           <div class="col-md-9 col-sm-8 col-xs-12">
           <div class="row">
-            <h2 class="blog-title-pro col-md-6 col-sm-12 col-xs-12 ">浏览器</h2>
+            <h2 class="blog-title-pro col-md-6 col-sm-12 col-xs-12 ">浏览器的渲染</h2>
             
             <div class="col-md-6 col-sm-12 col-xs-12 searchcontrol" id="js-search">
               <input class="form-control" type="text" id="js-search__input" placeholder="Search">
@@ -263,14 +263,14 @@
 </code></pre>
 </div>
 
-<p><img src="/images/fe-liu-2.png" alt="" /></p>
+<p><img src="/static/img/fe-liu-2.png" alt="" /></p>
 
 <h3 id="步骤一--html">步骤一 — HTML</h3>
 <hr />
 
 <p>浏览器从上到下读取标签，把他们分解成节点，从而创建 DOM 。</p>
 
-<p><img src="/images/fe-liu-1.png" alt="" /></p>
+<p><img src="/static/img/fe-liu-1.png" alt="" /></p>
 
 <h3 id="html-加载优化策略">HTML 加载优化策略</h3>
 <hr />
@@ -302,7 +302,7 @@
 </code></pre>
 </div>
 <p>CSSOM 节点创建与 DOM 节点创建类似，随后，两者合并如下：
-<img src="/images/fe-liu-3.png" alt="" />
+<img src="/static/img/fe-liu-3.png" alt="" />
 CSSOM 的构建会阻塞页面的渲染，因此我们想尽早加载样式，</p>
 
 <h3 id="css-加载优化策略">CSS 加载优化策略</h3>
@@ -329,7 +329,7 @@ media 属性指定加载样式的条件，比如：符合最大或最小分辨�
 由于脚本可能需要访问或操作之前的 HTML 或样式，我们必须等待它们构建完成。
 因此浏览器必须停止解析节点，完成构建 CSSOM，执行脚本，然后再继续。这就是 JavaScript 被称作<strong>“解析器阻塞”</strong>的原因。
 脚本只能等到先前的 CSS 节点构建完成。
-<img src="/images/fe-liu-4.png" alt="" /></p>
+<img src="/static/img/fe-liu-4.png" alt="" /></p>
 
 <h3 id="javascript-加载优化策略">JavaScript 加载优化策略</h3>
 <hr />
@@ -337,12 +337,12 @@ media 属性指定加载样式的条件，比如：符合最大或最小分辨�
   <li>
     <p>异步加载脚本
 脚本添加<strong>async</strong>属性，可以通知浏览器不要阻塞其余页面的加载，下载脚本处于较低的优先级。一旦下载完成，就可以执行。
-<img src="/images/fe-liu-5.png" alt="" />
+<img src="/static/img/fe-liu-5.png" alt="" />
 <strong>async</strong>适用于不影响 DOM 或 CSSOM 的脚本，对一些跟我们的代码无关的，不影响用户体验的外部脚本尤其适用，比如：分析统计脚本。</p>
   </li>
   <li>延迟加载脚本
 <strong>defer</strong> 跟 <strong>async</strong> 非常相似，不会阻塞页面加载，但会等到 HTML 完成解析后再执行。
-<img src="/images/fe-liu-6.png" alt="" />
+<img src="/static/img/fe-liu-6.png" alt="" />
 使用 <strong><a href="https://varvy.com/pagespeed/defer-loading-javascript.html">defer</a></strong> 策略的 另一个好选择，或者也可以使用 addEventListener，了解更多，参加这里。
 不幸的是 <strong>async</strong> 和 <strong>defer</strong> 对于行内的脚本不起作用，浏览器默认会编译执行它们。</li>
   <li>
@@ -358,17 +358,17 @@ media 属性指定加载样式的条件，比如：符合最大或最小分辨�
 <hr />
 <p>一旦所有节点已被解析，DOM 和 CSSOM 准备合并，浏览器便会构建渲染树。如果我们把节点想象成单词，那么对象模型就是句子，渲染树便是整个页面。</p>
 
-<p><img src="/images/fe-liu-7.png" alt="" /></p>
+<p><img src="/static/img/fe-liu-7.png" alt="" /></p>
 
 <h3 id="步骤五--布局layout">步骤五 — 布局（Layout）</h3>
 <hr />
 <p>布局阶段需要确定页面上所有元素的大小和位置。
-<img src="/images/fe-liu-8.png" alt="" /></p>
+<img src="/static/img/fe-liu-8.png" alt="" /></p>
 
 <h3 id="步骤六--渲染paint">步骤六 — 渲染（Paint）</h3>
 <hr />
 <p>最终的渲染阶段，会真正地光栅化屏幕上的像素，把页面呈现给用户。
-<img src="/images/fe-liu-9.png" alt="" />
+<img src="/static/img/fe-liu-9.png" alt="" />
 整个过程耗时1秒或十分之一秒，我们的任务是让它更快。
 如果 JavaScript 事件改变了页面的某部分，便会引起渲染树的重绘，并且迫使布局（Layout）和渲染（Paint）过程再次进行。</p>
 
@@ -377,13 +377,13 @@ media 属性指定加载样式的条件，比如：符合最大或最小分辨�
 <p>当浏览器请求一个 URL，服务端会响应一些 HTML。
 我们需要认识一个新术语，关键渲染路径（Critical Rendering Path (CRP)），就是浏览器渲染页面的步骤数，如下图。</p>
 
-<p><img src="/images/fe-liu-10.png" alt="" /></p>
+<p><img src="/static/img/fe-liu-10.png" alt="" /></p>
 
 <h3 id="关键路径长度">关键路径长度</h3>
 <hr />
 <p>关键渲染路径的度量标准是路径长度。最理想的关键路径长度是1。
 如果页面包含一些内部样式和 JavaScript ，关键路径发生以下改变。
-<img src="/images/fe-liu-11.png" alt="" />
+<img src="/static/img/fe-liu-11.png" alt="" />
 新增两步，构建 CSSOM和执行脚本，因为我们的 HTML 有内部样式和脚本需要计算。由于没有外部请求，我们的关键路径长度没变。
 但是注意，我们的 HTML 大小增加到了 2kb，某些地方还是受了影响。</p>
 
@@ -393,7 +393,7 @@ media 属性指定加载样式的条件，比如：符合最大或最小分辨�
 如果你认为不需要外部资源，就大错特错了，外部资源可以被缓存。
 我们使用一个外部 CSS 文件，一个外部 JavaScript 文件，和一个外部带 async 属性的 JavaScript 文件。关键路径图如下：</p>
 
-<p><img src="/images/fe-liu-12.png" alt="" />
+<p><img src="/static/img/fe-liu-12.png" alt="" />
 浏览器请求页面，构建 DOM，发现外部资源后开始下载，CSS 和 JavaScript 有较高的优先级，其它资源次之。
 <strong>styles.css</strong> 和 <strong>app.js</strong> 通过另一个关键路径获取。暂时不获取 analytics.js ，因为加了 async 属性，浏览器将用另一个线程下载它，它处于较低优先级，不会阻塞页面渲染，也不影响关键路径。</p>
 
