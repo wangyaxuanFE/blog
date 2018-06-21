@@ -4,7 +4,7 @@ author: 王雅轩
 logo: https://github.com/wangyaxuanFE/blog/blob/master/static/img/guan.jpg
 github: https://github.com/wangyaxuanFE/blog
 about: Freelance developer
-
+baseurl: blog
 
 allowsearch: true
 
