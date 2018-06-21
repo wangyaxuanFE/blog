@@ -5,8 +5,8 @@
     <description>My Personal Blog</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/sitemap.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 21 Jun 2018 17:29:18 +0800</pubDate>
-    <lastBuildDate>Thu, 21 Jun 2018 17:29:18 +0800</lastBuildDate>
+    <pubDate>Thu, 21 Jun 2018 17:37:33 +0800</pubDate>
+    <lastBuildDate>Thu, 21 Jun 2018 17:37:33 +0800</lastBuildDate>
     <generator>Jekyll v3.4.3</generator>
     
       <item>
@@ -36,7 +36,7 @@ Redux的主要优势之一是它可以帮你处理应用的共享状态。如果
   &lt;li&gt;API {subscribe,dispatch,getState}&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;img src=&quot;/static/img/re-1.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/static/img/re-1.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;2)combineReducers(reducers)&lt;/strong&gt;&lt;/p&gt;
 
@@ -122,7 +122,7 @@ Redux的主要优势之一是它可以帮你处理应用的共享状态。如果
 
 &lt;p&gt;createStore源码～&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/static/img/re-2.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/static/img/re-2.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;redux 中applyMiddleware 的源码～&lt;/p&gt;
 &lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kr&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;default&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;applyMiddleware&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(...&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;middlewares&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
@@ -921,14 +921,14 @@ Redux的主要优势之一是它可以帮你处理应用的共享状态。如果
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
-&lt;p&gt;&lt;img src=&quot;/static/img/fe-liu-2.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/static/img/fe-liu-2.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;步骤一--html&quot;&gt;步骤一 — HTML&lt;/h3&gt;
 &lt;hr /&gt;
 
 &lt;p&gt;浏览器从上到下读取标签，把他们分解成节点，从而创建 DOM 。&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/static/img/fe-liu-1.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/static/img/fe-liu-1.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;html-加载优化策略&quot;&gt;HTML 加载优化策略&lt;/h3&gt;
 &lt;hr /&gt;
@@ -960,7 +960,7 @@ Redux的主要优势之一是它可以帮你处理应用的共享状态。如果
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 &lt;p&gt;CSSOM 节点创建与 DOM 节点创建类似，随后，两者合并如下：
-&lt;img src=&quot;/static/img/fe-liu-3.png&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;/static/img/fe-liu-3.png&quot; alt=&quot;image&quot; /&gt;
 CSSOM 的构建会阻塞页面的渲染，因此我们想尽早加载样式，&lt;/p&gt;
 
 &lt;h3 id=&quot;css-加载优化策略&quot;&gt;CSS 加载优化策略&lt;/h3&gt;
@@ -987,7 +987,7 @@ media 属性指定加载样式的条件，比如：符合最大或最小分辨�
 由于脚本可能需要访问或操作之前的 HTML 或样式，我们必须等待它们构建完成。
 因此浏览器必须停止解析节点，完成构建 CSSOM，执行脚本，然后再继续。这就是 JavaScript 被称作&lt;strong&gt;“解析器阻塞”&lt;/strong&gt;的原因。
 脚本只能等到先前的 CSS 节点构建完成。
-&lt;img src=&quot;/static/img/fe-liu-4.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;img src=&quot;/static/img/fe-liu-4.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;javascript-加载优化策略&quot;&gt;JavaScript 加载优化策略&lt;/h3&gt;
 &lt;hr /&gt;
@@ -995,12 +995,12 @@ media 属性指定加载样式的条件，比如：符合最大或最小分辨�
   &lt;li&gt;
     &lt;p&gt;异步加载脚本
 脚本添加&lt;strong&gt;async&lt;/strong&gt;属性，可以通知浏览器不要阻塞其余页面的加载，下载脚本处于较低的优先级。一旦下载完成，就可以执行。
-&lt;img src=&quot;/static/img/fe-liu-5.png&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;/static/img/fe-liu-5.png&quot; alt=&quot;image&quot; /&gt;
 &lt;strong&gt;async&lt;/strong&gt;适用于不影响 DOM 或 CSSOM 的脚本，对一些跟我们的代码无关的，不影响用户体验的外部脚本尤其适用，比如：分析统计脚本。&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;延迟加载脚本
 &lt;strong&gt;defer&lt;/strong&gt; 跟 &lt;strong&gt;async&lt;/strong&gt; 非常相似，不会阻塞页面加载，但会等到 HTML 完成解析后再执行。
-&lt;img src=&quot;/static/img/fe-liu-6.png&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;/static/img/fe-liu-6.png&quot; alt=&quot;image&quot; /&gt;
 使用 &lt;strong&gt;&lt;a href=&quot;https://varvy.com/pagespeed/defer-loading-javascript.html&quot;&gt;defer&lt;/a&gt;&lt;/strong&gt; 策略的 另一个好选择，或者也可以使用 addEventListener，了解更多，参加这里。
 不幸的是 &lt;strong&gt;async&lt;/strong&gt; 和 &lt;strong&gt;defer&lt;/strong&gt; 对于行内的脚本不起作用，浏览器默认会编译执行它们。&lt;/li&gt;
   &lt;li&gt;
@@ -1016,17 +1016,17 @@ media 属性指定加载样式的条件，比如：符合最大或最小分辨�
 &lt;hr /&gt;
 &lt;p&gt;一旦所有节点已被解析，DOM 和 CSSOM 准备合并，浏览器便会构建渲染树。如果我们把节点想象成单词，那么对象模型就是句子，渲染树便是整个页面。&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/static/img/fe-liu-7.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/static/img/fe-liu-7.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;步骤五--布局layout&quot;&gt;步骤五 — 布局（Layout）&lt;/h3&gt;
 &lt;hr /&gt;
 &lt;p&gt;布局阶段需要确定页面上所有元素的大小和位置。
-&lt;img src=&quot;/static/img/fe-liu-8.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;img src=&quot;/static/img/fe-liu-8.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;步骤六--渲染paint&quot;&gt;步骤六 — 渲染（Paint）&lt;/h3&gt;
 &lt;hr /&gt;
 &lt;p&gt;最终的渲染阶段，会真正地光栅化屏幕上的像素，把页面呈现给用户。
-&lt;img src=&quot;/static/img/fe-liu-9.png&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;/static/img/fe-liu-9.png&quot; alt=&quot;image&quot; /&gt;
 整个过程耗时1秒或十分之一秒，我们的任务是让它更快。
 如果 JavaScript 事件改变了页面的某部分，便会引起渲染树的重绘，并且迫使布局（Layout）和渲染（Paint）过程再次进行。&lt;/p&gt;
 
@@ -1035,13 +1035,13 @@ media 属性指定加载样式的条件，比如：符合最大或最小分辨�
 &lt;p&gt;当浏览器请求一个 URL，服务端会响应一些 HTML。
 我们需要认识一个新术语，关键渲染路径（Critical Rendering Path (CRP)），就是浏览器渲染页面的步骤数，如下图。&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/static/img/fe-liu-10.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/static/img/fe-liu-10.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;关键路径长度&quot;&gt;关键路径长度&lt;/h3&gt;
 &lt;hr /&gt;
 &lt;p&gt;关键渲染路径的度量标准是路径长度。最理想的关键路径长度是1。
 如果页面包含一些内部样式和 JavaScript ，关键路径发生以下改变。
-&lt;img src=&quot;/static/img/fe-liu-11.png&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;/static/img/fe-liu-11.png&quot; alt=&quot;image&quot; /&gt;
 新增两步，构建 CSSOM和执行脚本，因为我们的 HTML 有内部样式和脚本需要计算。由于没有外部请求，我们的关键路径长度没变。
 但是注意，我们的 HTML 大小增加到了 2kb，某些地方还是受了影响。&lt;/p&gt;
 
@@ -1051,7 +1051,7 @@ media 属性指定加载样式的条件，比如：符合最大或最小分辨�
 如果你认为不需要外部资源，就大错特错了，外部资源可以被缓存。
 我们使用一个外部 CSS 文件，一个外部 JavaScript 文件，和一个外部带 async 属性的 JavaScript 文件。关键路径图如下：&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/static/img/fe-liu-12.png&quot; alt=&quot;&quot; /&gt;
+&lt;p&gt;&lt;img src=&quot;/static/img/fe-liu-12.png&quot; alt=&quot;image&quot; /&gt;
 浏览器请求页面，构建 DOM，发现外部资源后开始下载，CSS 和 JavaScript 有较高的优先级，其它资源次之。
 &lt;strong&gt;styles.css&lt;/strong&gt; 和 &lt;strong&gt;app.js&lt;/strong&gt; 通过另一个关键路径获取。暂时不获取 analytics.js ，因为加了 async 属性，浏览器将用另一个线程下载它，它处于较低优先级，不会阻塞页面渲染，也不影响关键路径。&lt;/p&gt;
 
