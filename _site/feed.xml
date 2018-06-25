@@ -3,10 +3,10 @@
   <channel>
     <title>王雅轩</title>
     <description>My Personal Blog</description>
-    <link>http://localhost:4000/</link>
-    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 21 Jun 2018 17:37:33 +0800</pubDate>
-    <lastBuildDate>Thu, 21 Jun 2018 17:37:33 +0800</lastBuildDate>
+    <link>http://localhost:4000blog/</link>
+    <atom:link href="http://localhost:4000blog/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Fri, 22 Jun 2018 15:21:13 +0800</pubDate>
+    <lastBuildDate>Fri, 22 Jun 2018 15:21:13 +0800</lastBuildDate>
     <generator>Jekyll v3.4.3</generator>
     
       <item>
@@ -186,8 +186,8 @@ Redux的主要优势之一是它可以帮你处理应用的共享状态。如果
 &lt;p&gt;如果不嫌麻烦使用import {} from ‘react-redux’ 的方式，这个接口就没有什么卵用了～。&lt;/p&gt;
 </description>
         <pubDate>Wed, 21 Jun 2017 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/fe/2017/06/21/redux.html</link>
-        <guid isPermaLink="true">http://localhost:4000/fe/2017/06/21/redux.html</guid>
+        <link>http://localhost:4000blog/fe/2017/06/21/redux.html</link>
+        <guid isPermaLink="true">http://localhost:4000blog/fe/2017/06/21/redux.html</guid>
         
         <category>http</category>
         
@@ -277,8 +277,8 @@ Redux的主要优势之一是它可以帮你处理应用的共享状态。如果
 
 </description>
         <pubDate>Wed, 21 Jun 2017 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/fe/2017/06/21/react.html</link>
-        <guid isPermaLink="true">http://localhost:4000/fe/2017/06/21/react.html</guid>
+        <link>http://localhost:4000blog/fe/2017/06/21/react.html</link>
+        <guid isPermaLink="true">http://localhost:4000blog/fe/2017/06/21/react.html</guid>
         
         <category>http</category>
         
@@ -327,8 +327,8 @@ Redux的主要优势之一是它可以帮你处理应用的共享状态。如果
 &lt;/ul&gt;
 </description>
         <pubDate>Wed, 21 Jun 2017 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/fe/2017/06/21/react-router.html</link>
-        <guid isPermaLink="true">http://localhost:4000/fe/2017/06/21/react-router.html</guid>
+        <link>http://localhost:4000blog/fe/2017/06/21/react-router.html</link>
+        <guid isPermaLink="true">http://localhost:4000blog/fe/2017/06/21/react-router.html</guid>
         
         <category>http</category>
         
@@ -426,8 +426,8 @@ Redux的主要优势之一是它可以帮你处理应用的共享状态。如果
 &lt;p&gt;&lt;strong&gt;总结：一般情况下，是没有必要使用这个库的 ～&lt;/strong&gt;&lt;/p&gt;
 </description>
         <pubDate>Tue, 21 Mar 2017 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/fe/2017/03/21/react-router-redux.html</link>
-        <guid isPermaLink="true">http://localhost:4000/fe/2017/03/21/react-router-redux.html</guid>
+        <link>http://localhost:4000blog/fe/2017/03/21/react-router-redux.html</link>
+        <guid isPermaLink="true">http://localhost:4000blog/fe/2017/03/21/react-router-redux.html</guid>
         
         <category>http</category>
         
@@ -869,8 +869,8 @@ Redux的主要优势之一是它可以帮你处理应用的共享状态。如果
 
 </description>
         <pubDate>Tue, 21 Mar 2017 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/fe/2017/03/21/react-redux.html</link>
-        <guid isPermaLink="true">http://localhost:4000/fe/2017/03/21/react-redux.html</guid>
+        <link>http://localhost:4000blog/fe/2017/03/21/react-redux.html</link>
+        <guid isPermaLink="true">http://localhost:4000blog/fe/2017/03/21/react-redux.html</guid>
         
         <category>http</category>
         
@@ -1070,8 +1070,8 @@ media 属性指定加载样式的条件，比如：符合最大或最小分辨�
 
 </description>
         <pubDate>Sat, 11 Jul 2015 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/fe/2015/07/11/browser.html</link>
-        <guid isPermaLink="true">http://localhost:4000/fe/2015/07/11/browser.html</guid>
+        <link>http://localhost:4000blog/fe/2015/07/11/browser.html</link>
+        <guid isPermaLink="true">http://localhost:4000blog/fe/2015/07/11/browser.html</guid>
         
         <category>http</category>
         

@@ -58,19 +58,19 @@
         <!-- Core BootStrap CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
         <!-- Material Design CSS -->
-        <link rel="stylesheet" href="/static/css/bootstrap-material-design.min.css">
+        <link rel="stylesheet" href="blog/static/css/bootstrap-material-design.min.css">
 
         <!-- syntax highlighting CSS -->
-        <link rel="stylesheet" href="/static/css/syntax.css">
+        <link rel="stylesheet" href="blog/static/css/syntax.css">
 
         <!-- Custom CSS -->        
-        <link rel="stylesheet" href="/static/css/thickbox.css">
-        <link rel="stylesheet" href="/static/css/main.css">
-        <link rel="stylesheet" href="/static/css/projects.css">
+        <link rel="stylesheet" href="blog/static/css/thickbox.css">
+        <link rel="stylesheet" href="blog/static/css/main.css">
+        <link rel="stylesheet" href="blog/static/css/projects.css">
 
         <script type="text/javascript">
           //loadingImage is relative to project dir
-          var tb_pathToImage = "/static/img/loadingAnimation.gif";
+          var tb_pathToImage = "blog/static/img/loadingAnimation.gif";
         </script>
 
   </head>
@@ -81,7 +81,7 @@
         <div class="row">
           <div class="col-md-3 col-sm-4 col-xs-12">
             <div class="row-picture">
-              <img id="about" class="logo-img" src="https://github.com/wangyaxuanFE/blog/blob/master/static/img/guan.jpg" height="75px" width="75px">
+              <img id="about" class="logo-img" src="https://raw.githubusercontent.com/wangyaxuanFE/blog/master/static/img/guan.jpg" height="75px" width="75px">
             </div>
             <div class="row-details">
               <h4 class="list-group-item-heading">王雅轩</h4>
@@ -208,7 +208,7 @@
         </div>
         <div class="row-content">
           <div class="least-content">21 Jun 2017</div>
-          <h4 class="list-group-item-heading"><a href="/fe/2017/06/21/redux.html">Redux API</a></h4>
+          <h4 class="list-group-item-heading"><a href="blog/fe/2017/06/21/redux.html">Redux API</a></h4>
 
           <p class="list-group-item-text">redux的作用是什么呢 Redux专门用于管理状态。 Redux的主要优势之一是它可以帮你处理应用的共享状态。如果两个组件需要访问同一状态，该怎么办？这种两个组件同时需要访问同一状态的现象称为“共享状态”。 redux有哪些API？ createStore(reducer,[preloadState],enhancer/middleware) combineReducers(reducers) compose(…functions) applyMiddleware(middlewares) bindActionCreators(actionCreators,dispatch) 1)createStore(reducer,[preloadState],enhancer/middleware) 创建 Redux store 来存放状态。 enhancer 为function。用来增强store。 Redux 定义有applyMiddleware来增强store，后面会单独讲applyMiddleware。 API {subscribe,dispatch,getState}...</p>
         </div>
@@ -221,7 +221,7 @@
         </div>
         <div class="row-content">
           <div class="least-content">21 Jun 2017</div>
-          <h4 class="list-group-item-heading"><a href="/fe/2017/06/21/react.html">React API</a></h4>
+          <h4 class="list-group-item-heading"><a href="blog/fe/2017/06/21/react.html">React API</a></h4>
 
           <p class="list-group-item-text">react是什么 React是Facrbook内部的一个JavaScript类库，它引入了一种新的方式来处理浏览器DOM。 React为了尽可能减少对DOM的操作，提供了Virtual DOM(就是React抽象出来的一个对象,描述dom应该什么样子的，应该如何呈现。)去更新真实的DOM。 为什么通过这多一层的Virtual DOM操作就能更快呢?React有个diff算法,然后利用这个diff算法，通过当前新的dom表述与之前的作比较，计算出最小的步骤更新真实的DOM。 React本质上只关心两件事：1.更新DOM；2.响应事件。 react 和 react-dom React 0.14 发布，拆分为 react 和 react-dom。 原本在服务端渲染用的两个 API .renderToString 和...</p>
         </div>
@@ -234,7 +234,7 @@
         </div>
         <div class="row-content">
           <div class="least-content">21 Jun 2017</div>
-          <h4 class="list-group-item-heading"><a href="/fe/2017/06/21/react-router.html">react-router 与 react-router-dom 的区别</a></h4>
+          <h4 class="list-group-item-heading"><a href="blog/fe/2017/06/21/react-router.html">react-router 与 react-router-dom 的区别</a></h4>
 
           <p class="list-group-item-text">react-router-dom的产生 React Router 4.0 采用单代码仓库模型架构（monorepo），这意味者这个仓库里面有若干相互独立的包，分别是： react-router React Router 核心 react-router-dom 用于 DOM 绑定的 React Router react-router-native 用于 React Native 的...</p>
         </div>
@@ -247,7 +247,7 @@
         </div>
         <div class="row-content">
           <div class="least-content">21 Mar 2017</div>
-          <h4 class="list-group-item-heading"><a href="/fe/2017/03/21/react-router-redux.html">react-router-redux还需要用吗</a></h4>
+          <h4 class="list-group-item-heading"><a href="blog/fe/2017/03/21/react-router-redux.html">react-router-redux还需要用吗</a></h4>
 
           <p class="list-group-item-text">react-router-redux是什么 是将react-router 和 redux 集成到一起的库，让你可以用redux的方式去操作react-router。 本质上，是把react-router自己维护的状态，例如location、history、path等等，也交给redux管理 。 以前的用法 routerActions 实现了组件内部跳转～ import {routerActions} from 'react-router-redux' import { bindActionCreators } from 'redux'...</p>
         </div>
@@ -260,7 +260,7 @@
         </div>
         <div class="row-content">
           <div class="least-content">21 Mar 2017</div>
-          <h4 class="list-group-item-heading"><a href="/fe/2017/03/21/react-redux.html">React-redux</a></h4>
+          <h4 class="list-group-item-heading"><a href="blog/fe/2017/03/21/react-redux.html">React-redux</a></h4>
 
           <p class="list-group-item-text">React-redux是什么 react-redux在redux的基础上，就关注两点：Provider和connect。 React-redux API Provider Provider就是把我们用rudux创建的store传递到内部的其他组件。让内部组件可以享有这个store并提供对state的更新。 const render = Component =&gt; { ReactDOM.render( &lt;Provider store = {store}&gt; &lt;/Component&gt; &lt;/Provider&gt;, document.getElementById("root")...</p>
         </div>
@@ -273,7 +273,7 @@
         </div>
         <div class="row-content">
           <div class="least-content">11 Jul 2015</div>
-          <h4 class="list-group-item-heading"><a href="/fe/2015/07/11/browser.html">浏览器的渲染</a></h4>
+          <h4 class="list-group-item-heading"><a href="blog/fe/2015/07/11/browser.html">浏览器的渲染</a></h4>
 
           <p class="list-group-item-text">浏览器都做了什么 我们希望浏览器打开一个简单的网页 &lt;!DOCTYPE html&gt; &lt;html&gt; &lt;head&gt; &lt;title&gt;The "Click the button" page&lt;/title&gt; &lt;meta charset="UTF-8"/&gt; &lt;link rel="stylesheet" href="styles.css" /&gt; &lt;/head&gt; &lt;body&gt; &lt;h1&gt;...</p>
         </div>
@@ -313,12 +313,12 @@
 <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
-<script src="/static/js/super-search.js"></script>
+<script src="blog/static/js/super-search.js"></script>
 
-<script src="/static/js/thickbox-compressed.js"></script>
-<script src="/static/js/material.min.js"></script>
-<script src="/static/js/main.js"></script>
-<script src="/static/js/projects.js"></script>
+<script src="blog/static/js/thickbox-compressed.js"></script>
+<script src="blog/static/js/material.min.js"></script>
+<script src="blog/static/js/main.js"></script>
+<script src="blog/static/js/projects.js"></script>
 
     <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
