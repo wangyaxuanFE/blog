@@ -1,14 +1,11 @@
 ---
-layout: page
-title:  "react-router 与 react-router-dom 的区别"
-teaser: "所用所想"
-categories:
-    - fe
-tags:
-    - http
-image:
-#   thumb: "unsplash_brooklyn-bridge-thumb.jpg"
-header: no
+layout: post
+title: "react-router 与 react-router-dom 的区别"
+date: 2017-09-12 13:32:20 +0300
+# description: You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. # Add post description (optional)
+img: 3.jpg # Add image post (optional)
+fig-caption: # Add figcaption (optional)
+tags: [Holidays, Hawaii]
 ---
 
 ## react-router-dom的产生
